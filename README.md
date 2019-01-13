@@ -1,1 +1,1 @@
-![screenshot](res/screenshot.png "Screenshot");
+![screenshot](res/screenshot.png "Screenshot")
