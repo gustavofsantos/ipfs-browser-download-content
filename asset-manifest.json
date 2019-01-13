@@ -1,13 +1,13 @@
 {
-  "main.css": "/ipfs-browser-download-content/static/css/main.3cdbaf9d.chunk.css",
-  "main.js": "/ipfs-browser-download-content/static/js/main.2e5b199e.chunk.js",
-  "main.js.map": "/ipfs-browser-download-content/static/js/main.2e5b199e.chunk.js.map",
-  "static/js/1.babd9482.chunk.js": "/ipfs-browser-download-content/static/js/1.babd9482.chunk.js",
-  "static/js/1.babd9482.chunk.js.map": "/ipfs-browser-download-content/static/js/1.babd9482.chunk.js.map",
+  "main.css": "/ipfs-browser-download-content/static/css/main.fb59eb1b.chunk.css",
+  "main.js": "/ipfs-browser-download-content/static/js/main.ce31a9c2.chunk.js",
+  "main.js.map": "/ipfs-browser-download-content/static/js/main.ce31a9c2.chunk.js.map",
+  "static/js/1.877b3c15.chunk.js": "/ipfs-browser-download-content/static/js/1.877b3c15.chunk.js",
+  "static/js/1.877b3c15.chunk.js.map": "/ipfs-browser-download-content/static/js/1.877b3c15.chunk.js.map",
   "runtime~main.js": "/ipfs-browser-download-content/static/js/runtime~main.82c3a273.js",
   "runtime~main.js.map": "/ipfs-browser-download-content/static/js/runtime~main.82c3a273.js.map",
-  "static/css/main.3cdbaf9d.chunk.css.map": "/ipfs-browser-download-content/static/css/main.3cdbaf9d.chunk.css.map",
+  "static/css/main.fb59eb1b.chunk.css.map": "/ipfs-browser-download-content/static/css/main.fb59eb1b.chunk.css.map",
   "index.html": "/ipfs-browser-download-content/index.html",
-  "precache-manifest.8f3afc0419c65880255b4ef0bd16a6ca.js": "/ipfs-browser-download-content/precache-manifest.8f3afc0419c65880255b4ef0bd16a6ca.js",
+  "precache-manifest.97aa803ed9ac97f5cf36817552fbed46.js": "/ipfs-browser-download-content/precache-manifest.97aa803ed9ac97f5cf36817552fbed46.js",
   "service-worker.js": "/ipfs-browser-download-content/service-worker.js"
 }
