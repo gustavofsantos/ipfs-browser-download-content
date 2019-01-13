@@ -1,0 +1,15 @@
+.download-container {
+}
+
+.download-button {
+  color: black;
+  padding: 8px;
+
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(#FFF, #DDD);
+}
+
+.download-wait-text {
+  color: slategray;
+}
