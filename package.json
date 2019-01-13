@@ -6,6 +6,7 @@
     "name": "Gustavo Santos",
     "email": "gfdsantos@inf.ufpel.edu.br"
   },
+  "homepage": "http://gustavofsantos.github.io/ipfs-browser-download-content",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -25,5 +26,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
