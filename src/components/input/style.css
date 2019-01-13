@@ -1,0 +1,21 @@
+.input-container {
+  display: block;
+  width: 100%;
+}
+
+.input-container__input {
+  outline: none;
+  box-sizing: border-box;
+
+  color: #000;
+  background-color: #FFF;
+  font-weight: 900;
+  font-size: 16px;
+
+  margin-top: 1rem;
+  padding: 12px;
+
+  width: 100%;
+
+  border: 2px solid #000;
+}

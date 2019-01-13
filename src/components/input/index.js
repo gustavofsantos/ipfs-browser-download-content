@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './style.css';
 
 export default class Input extends React.Component {
@@ -19,6 +18,7 @@ export default class Input extends React.Component {
       <div className="input-container">
         <input
           className="input-container__input"
+          placeholder="IPFS CID"
           onChange={this.onChange}
           value={this.state.value}
         />

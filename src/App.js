@@ -1,30 +1,27 @@
 import React, { Component } from 'react';
-import './App.css';
 import DownloadButton from './components/download-button';
 import Input from './components/input';
+import Title from "./components/title";
+
+import './App.css';
 
 class App extends Component {
   state = {
     ready: false,
-    cid: ''
+    cid: '',
+    downloading: false,
   }
 
   downloadToBuffer = (cid) => {
-    console.log('download from cid', cid);
     return new Promise((resolve, reject) => {
-      const stream = this.node.files.getReadableStream(cid);
-
-      stream.on('data', file => {
-        if (file.type !== 'dir') {
-          file.content.on('data', data => {
-            resolve(data);
-          });
-          file.content.resume();
+      this.node.files.get(cid, (err, files) => {
+        if (!err && files.length === 1) {
+          resolve(files[0].content);
         } else {
-          reject('The CID represents a directory. Only files are supported yet.');
+          reject();
         }
-      })
-    })
+      });
+    });
   }
 
   onChangeCid = (cid) => {
@@ -35,6 +32,10 @@ class App extends Component {
 
   onDownloadClick = async () => {
     const { cid } = this.state;
+
+    this.setState({
+      downloading: true
+    });
 
     try {
       const buffer = await this.downloadToBuffer(cid);
@@ -48,6 +49,10 @@ class App extends Component {
       document.body.removeChild(a);
     } catch (err) {
       console.error(err);
+    } finally {
+      this.setState({
+        downloading: false
+      });
     }
   }
 
@@ -55,16 +60,6 @@ class App extends Component {
     this.setState({
       cid: ''
     });
-  }
-
-  startLookPeers = () => {
-    setInterval(() => {
-      this.node.swarm.peers((err, peers) => {
-        if (!err) {
-          console.log(peers);
-        }
-      });
-    }, 5000);
   }
 
   componentDidMount() {
@@ -75,21 +70,34 @@ class App extends Component {
         ready: true
       });
     });
-
-    this.startLookPeers();
   }
 
   render() {
     return (
       <div className="App">
-        <Input
-          onUpdateText={this.onChangeCid}
-        />
+        {
+          this.state.downloading ? 
+            <div className="App-container">
+              <p>
+                downloading...
+              </p>
+            </div>
+          :
+            <div className="App-container">
+              <Title>
+                IPFS Content Downloader
+              </Title>
 
-        <DownloadButton 
-          ready={this.state.ready}
-          onClick={this.onDownloadClick}
-        />
+              <Input
+                onUpdateText={this.onChangeCid}
+              />
+
+              <DownloadButton 
+                ready={this.state.ready}
+                onClick={this.onDownloadClick}
+              />
+            </div>
+        }
       </div>
     );
   }

@@ -1,15 +1,22 @@
 .download-container {
+  width: 100%;
 }
 
 .download-button {
-  color: black;
-  padding: 8px;
+  color: #000;
+  background-color: #AADFED;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
 
-  border: none;
-  border-radius: 6px;
-  background: linear-gradient(#FFF, #DDD);
+  margin-top: 1rem;
+  padding: 12px;
+
+  width: 100%;
+
+  border: 2px solid #000;
 }
 
 .download-wait-text {
-  color: slategray;
+  color: #03236F;
 }
