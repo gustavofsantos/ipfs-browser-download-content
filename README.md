@@ -1,1 +1,1 @@
-Just go to the page, paste a CID and click "download".
+![screenshot](res/screenshot.png "Screenshot");
