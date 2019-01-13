@@ -1,5 +1,5 @@
 .input-container {
-  display: block;
+  display: flex;
   width: 100%;
 }
 
@@ -16,6 +16,19 @@
   padding: 12px;
 
   width: 100%;
+
+  border: 2px solid #000;
+}
+
+.input-container__button {
+  color: #000;
+  background-color: #FFF;
+  font-weight: 900;
+  font-size: 16px;
+
+  margin-top: 1rem;
+  padding: 12px;
+  margin-left: 1rem;
 
   border: 2px solid #000;
 }

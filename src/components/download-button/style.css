@@ -11,12 +11,18 @@
 
   margin-top: 1rem;
   padding: 12px;
-
+  
   width: 100%;
-
+  
   border: 2px solid #000;
 }
 
 .download-wait-text {
-  color: #03236F;
+  color: #000;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  margin-top: 1rem;
+  padding: 12px;
 }
