@@ -16,6 +16,7 @@ class App extends Component {
     return new Promise((resolve, reject) => {
       this.node.files.get(cid, (err, files) => {
         if (!err && files.length === 1) {
+          console.log(files[0]);
           resolve(files[0].content);
         } else {
           reject();
@@ -40,13 +41,11 @@ class App extends Component {
     try {
       const buffer = await this.downloadToBuffer(cid);
       const byteArray = new Uint8Array(buffer);
-      const a = window.document.createElement('a');
+      const blob = new Blob([byteArray], { type: 'application/octet-stream' });
 
-      a.href = window.URL.createObjectURL(new Blob([byteArray], { type: 'application/octet-stream' }));
-      document.body.appendChild(a);
-      a.click();
+      const name = prompt('File name', 'file.txt');
 
-      document.body.removeChild(a);
+      window.saveAs(blob, name);
     } catch (err) {
       console.error(err);
     } finally {
