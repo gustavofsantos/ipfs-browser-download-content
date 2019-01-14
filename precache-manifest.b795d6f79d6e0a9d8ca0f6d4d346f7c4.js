@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/ipfs-browser-download-content/static/js/runtime~main.82c3a273.js"
   },
   {
-    "revision": "713a83bfaeb83946c692",
-    "url": "/ipfs-browser-download-content/static/js/main.713a83bf.chunk.js"
+    "revision": "70ce0d8a0f0ac48f9d2d",
+    "url": "/ipfs-browser-download-content/static/js/main.70ce0d8a.chunk.js"
   },
   {
     "revision": "877b3c15acebfb3cc7c1",
     "url": "/ipfs-browser-download-content/static/js/1.877b3c15.chunk.js"
   },
   {
-    "revision": "713a83bfaeb83946c692",
-    "url": "/ipfs-browser-download-content/static/css/main.833c6e1b.chunk.css"
+    "revision": "70ce0d8a0f0ac48f9d2d",
+    "url": "/ipfs-browser-download-content/static/css/main.0b0ea211.chunk.css"
   },
   {
-    "revision": "78e92a2959479d953bc58f60dd1d0070",
+    "revision": "b45445e1e1a9fb874c13fe7c409a906d",
     "url": "/ipfs-browser-download-content/index.html"
   }
 ];
