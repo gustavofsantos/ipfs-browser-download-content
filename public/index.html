@@ -14,16 +14,17 @@
   <body>
     <noscript>you need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <script src="ipfs.js"></script>
+    <!-- <script src="ipfs.js"></script> -->
     <script src="FileSaver.js"></script>
+    <script src="cached-webpgr.js"></script>
     <script>
-      // Check that service workers are registered
       if ('serviceWorker' in navigator) {
-        // Use the window load event to keep the page load performant
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/service-worker.js');
         });
       }
+
+      window.requireScript('ipfs', '0.33.1', 'https://unpkg.com/ipfs/dist/index.min.js');
     </script>
   </body>
 </html>
