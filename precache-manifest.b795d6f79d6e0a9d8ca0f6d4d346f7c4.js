@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/ipfs-browser-download-content/static/css/main.0b0ea211.chunk.css"
   },
   {
-    "revision": "b27e7b5db48bf798c996b43f47da9472",
+    "revision": "b45445e1e1a9fb874c13fe7c409a906d",
     "url": "/ipfs-browser-download-content/index.html"
   }
 ];
