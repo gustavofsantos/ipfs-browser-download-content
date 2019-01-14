@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ipfs-browser-download-content/precache-manifest.97aa803ed9ac97f5cf36817552fbed46.js"
+  "/ipfs-browser-download-content/precache-manifest.d925aa950390054616bef99f782c2d63.js"
 );
 
 workbox.clientsClaim();
