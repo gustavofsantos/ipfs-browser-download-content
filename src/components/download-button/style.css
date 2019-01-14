@@ -22,7 +22,7 @@
 .download-button:active {
   transition: all 0.3ms;
   box-shadow: 2px 2px 0 #000;
-  transform: scale(.99, .99);
+  transform: scale(.995, .995);
 }
 
 .download-wait-text {
