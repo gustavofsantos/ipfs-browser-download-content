@@ -45,7 +45,9 @@ class App extends Component {
 
       const name = prompt('File name', 'file.txt');
 
-      window.saveAs(blob, name);
+      if (name) {
+        window.saveAs(blob, name);
+      }
     } catch (err) {
       console.error(err);
     } finally {
